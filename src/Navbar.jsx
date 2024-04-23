@@ -19,7 +19,7 @@ function Navbar() {
           <a href="https://www.instagram.com/saic_tiet/">
             <i className="fab fa-instagram fa-lg"></i>
           </a>
-          <a href="https://www.linkedin.com/company/student-alumni-interaction-cell/mycompany/">
+          <a href="https://www.linkedin.com/company/student-alumni-interaction-cell/">
             <i className="fab fa-linkedin fa-lg"></i>
           </a>
         </div>

@@ -71,16 +71,26 @@ header a {
   line-height: 1.3em;
 }
 
+.button {
+  border: none;
+  border-radius: 5px;
+  padding: 10px 20px;
+  cursor: pointer;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  text-decoration: none;
+  transition: background-color 0.3s, color 0.3s;
+}
+
 .carousel .list .item .topic {
   color: #f6cabb;
 }
 
 .carousel .list .item .buttons {
   display: grid;
-  grid-template-columns: repeat(2, 130px);
-  grid-template-rows: 40px;
+  grid-template-rows: repeat(2, 40px);
   gap: 5px;
-  margin-top: 20px;
 }
 
 
@@ -265,17 +275,6 @@ header a {
   }
 }
 
-/* running time */
-.carousel .time {
-  position: absolute;
-  z-index: 1000;
-  width: 0%;
-  height: 3px;
-  background-color: #f1683a;
-  left: 0;
-  top: 0;
-}
-
 .carousel.next .time,
 .carousel.prev .time {
   animation: runningTime 4s linear 1 forwards;
@@ -349,4 +348,10 @@ header a {
     .carousel .list .item .content .topic {
       font-size: 2.5em;
     }
-  }
+    .carousel .list .item .buttons {
+      display: grid;
+      grid-template-rows: repeat(2, 1fr); /* Defines two rows */
+      gap: 5px;
+      margin-top: 20px;
+    }
+}

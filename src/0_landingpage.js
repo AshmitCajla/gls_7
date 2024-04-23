@@ -1,7 +1,7 @@
 import React, { useState, useEffect, useRef } from "react";
 import "./0_landingpage.css";
-import Bg from "./Assets/BG_SAIC.jpg";
-import Game_night from "./Assets/BG_GN.jpg";
+import Bg from "./Assets/BG_SAIC.svg";
+import Game_night from "./Assets/BG_GN.svg";
 import PanelDiscussion from "./Assets/BG_AP.jpg";
 import StarNight from "./Assets/BG_SN.png";
 import Navbar from "./Navbar";
@@ -62,7 +62,7 @@ const Carousel = () => {
         <CarouselItem
           src={Bg}
           heading="SAIC"
-          title="GLOBAL  LEADERSHIP"
+          title="GLOBAL LEADERSHIP"
           topic="SUMMIT 7.0"
           description="Get ready for the ultimate leadership experience! SAIC's Global
           Leadership Summit is back and better than ever. Three days
@@ -71,68 +71,90 @@ const Carousel = () => {
           mind-blowing exchange of ideas and experiences."
         />
         <CarouselItem
+          src={StarNight}
+          heading="SAIC"
+          title="GLS 7.0"
+          topic="SPEAKER SESSION"
+          description={
+            <>
+              Date: 27th April <br />
+              Venue: LT101 <br />
+              Time: 4:30 PM <br />
+              Get ready for a night of glitz and glamour as we welcome our special guest for an unforgettable evening. Celebrate the achievements of our community and be inspired by their stories
+            </>
+          }
+          seeMoreText="Know the Star"
+          seeMoreLink="/Know_the_Star"
+          subscribeText=""
+          subscribeLink=""
+        />
+          <CarouselItem
+            src={PanelDiscussion}
+            heading="SAIC"
+            title="GLS 7.0"
+            topic="ALUMNI PANEL DISCUSSION"
+            date = "27th April"
+            description=
+            {
+              <>  
+                  Date: 28th April <br />
+                  Venue: Tan Audi <br /> 
+                  Time: 3:00 PM <br />
+                  We are thrilled to announce the participation of our prestigious
+                  alumni panel for our upcoming event - Global Leadership Summit.
+              </>
+            }
+            seeMoreText="Meet the Panelists"
+            seeMoreLink="/Know_the_Alumni"
+            subscribeText=""
+            subscribeLink=""
+          />
+        <CarouselItem
           src={Game_night}
           heading="SAIC"
           title="GLS 7.0"
-          topic="Game Night"
-          description="Taking you back to the good old days, we welcome you to another
-          exciting day in this grand event-GLS. A night filled with laughter
-          and anticipation as you play to win and create memories that will
-          be etched in your hearts forever. Join us to unleash your
-          competitive spirit and immerse yourself in a night you will never
-          forget. Let the games begin!"
+          topic="CITYSCAPE"
+          description=
+          {
+            <>
+              Date: 28th April <br />
+              Venue: Tan Audi <br />
+              Time: 5:30 PM <br />
+              Taking you back to the good old days, we welcome you to another
+              exciting day in this grand event-GLS. A night filled with laughter
+              and anticipation as you play to win and create memories that will
+              be etched in your hearts forever. Join us to unleash your
+              competitive spirit and immerse yourself in a night you will never
+              forget. Let the games begin!
+            </>
+          }
           seeMoreText="Register Now!"
           seeMoreLink="/Register"
           subscribeText="Rule Book"
           subscribeLink="/Register"
         />
-        <CarouselItem
-          src={PanelDiscussion}
-          heading="SAIC"
-          title="GLS 7.0"
-          topic="Alumni Panel"
-          description="We are thrilled to announce the participation of our prestigious
-          alumni panel for our upcoming event - Global Leadership Summit."
-          seeMoreText="Meet the Panelists"
-          seeMoreLink="/Know_the_Alumni"
-          subscribeText=""
-          subscribeLink="https://example.com/subscribe"
-        />
-        <CarouselItem
-          src={StarNight}
-          heading="SAIC"
-          title="GLS 7.0"
-          topic="Star Night"
-          description="Get ready for a night of glitz and glamour as we welcome our 
-          special guest for an unforgettable evening. Celebrate the achievements of our
-          community and be inspired by their stories"
-          seeMoreText="Know the Star"
-          seeMoreLink="/Know_the_Star"
-          subscribeText=""
-          subscribeLink="https://example.com/subscribe"
-        />
       </div>
       <div className="thumbnail">
         <ThumbnailItem
-          src={Game_night}
-          title="Game Night"
-          description="26th April"
-          isActive={currentIndex === 0}
-          onClick={() => handleThumbnailClick(0)}
-        />
-        <ThumbnailItem
-          src={PanelDiscussion}
-          title="Alumni Panel"
-          description="27th April"
-          isActive={currentIndex === 1}
-          onClick={() => handleThumbnailClick(1)}
-        />
-        <ThumbnailItem
           src={StarNight}
-          title="Star Night"
-          description="28th April"
+          title="Speaker session"
+          description="27th April"
           isActive={currentIndex === 2}
           onClick={() => handleThumbnailClick(2)}
+        />
+          <ThumbnailItem
+            src={PanelDiscussion}
+            title="Alumni panel discussion"
+            description="28th April"
+            isActive={currentIndex === 1}
+            onClick={() => handleThumbnailClick(1)}
+          />
+        <ThumbnailItem
+          src={Game_night}
+          title="Cityscape"
+          description="28th April"
+          isActive={currentIndex === 0}
+          onClick={() => handleThumbnailClick(0)}
         />
         <ThumbnailItem
           src={Bg}
@@ -173,12 +195,11 @@ const CarouselItem = ({
       <div className="topic">{topic}</div>
       <div className="des">{description}</div>
       <div className="buttons">
-        {seeMoreLink && (
+        {/* {seeMoreLink && (
           <a href={seeMoreLink} target="" rel="noopener noreferrer">
             <button
               style={{
                 backgroundColor: "#eee",
-                border: "none",
                 color: "#000",
                 borderRadius: "5px",
                 padding: "10px 20px",
@@ -215,7 +236,54 @@ const CarouselItem = ({
               {subscribeText}
             </button>
           </a>
-        )}
+        )} */}
+        {seeMoreLink && (
+  <a href={seeMoreLink} target="" rel="noopener noreferrer">
+    <button
+      style={{
+        backgroundColor: "#eee",
+        color: "#000",
+        borderRadius: "5px",
+        padding: "10px 20px",
+        cursor: "pointer",
+        display: "inline-flex",
+        alignItems: "center",
+        justifyContent: "center",
+        textDecoration: "none",
+        transition: "background-color 0.3s",
+        width: "150px", /* Added */
+        height: "40px" /* Added */
+      }}
+    >
+      {seeMoreText}
+    </button>
+  </a>
+)}
+
+{subscribeText && (
+  <a href={subscribeLink} target="" rel="noopener noreferrer">
+    <button
+      style={{
+        backgroundColor: "transparent",
+        border: "1px solid #fff",
+        color: "#fff",
+        borderRadius: "5px",
+        padding: "10px 20px",
+        cursor: "pointer",
+        display: "inline-flex",
+        alignItems: "center",
+        justifyContent: "center",
+        textDecoration: "none",
+        transition: "background-color 0.3s, color 0.3s",
+        width: "150px", /* Added */
+        height: "40px" /* Added */
+      }}
+    >
+      {subscribeText}
+    </button>
+  </a>
+)}
+
       </div>
     </div>
   </div>
