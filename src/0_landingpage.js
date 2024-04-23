@@ -65,7 +65,7 @@ const Carousel = () => {
           title="GLOBAL LEADERSHIP"
           topic="SUMMIT 7.0"
           description="Get ready for the ultimate leadership experience! SAIC's Global
-          Leadership Summit is back and better than ever. Three days
+          Leadership Summit is back and better than ever. Two days
           jam-packed with inspiration, networking, and pure fun! Join forces
           with current college students and esteemed alumni for a
           mind-blowing exchange of ideas and experiences."
@@ -82,7 +82,7 @@ const Carousel = () => {
               Time: 4:30 PM <br />
               Discover the power of innovation at our global leadership summit! Join us for an engaging and insightful session to explore visionary ideas to guide and mentor you towards a brighter future.            </>
           }
-          seeMoreText="Know the Star"
+          seeMoreText="Know the Guest"
           seeMoreLink="/Know_the_Star"
           subscribeText="Register Now!"
           subscribeLink="/Register4speakersession"
