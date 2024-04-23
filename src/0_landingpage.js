@@ -85,8 +85,8 @@ const Carousel = () => {
           }
           seeMoreText="Know the Star"
           seeMoreLink="/Know_the_Star"
-          subscribeText=""
-          subscribeLink=""
+          subscribeText="Register Now!"
+          subscribeLink="/Register4speakersession"
         />
           <CarouselItem
             src={PanelDiscussion}
@@ -120,6 +120,7 @@ const Carousel = () => {
               Date: 28th April <br />
               Venue: Tan Audi <br />
               Time: 5:30 PM <br />
+              Number of Team members: 4 <br />
               Taking you back to the good old days, we welcome you to another
               exciting day in this grand event-GLS. A night filled with laughter
               and anticipation as you play to win and create memories that will
@@ -131,7 +132,7 @@ const Carousel = () => {
           seeMoreText="Register Now!"
           seeMoreLink="/Register"
           subscribeText="Rule Book"
-          subscribeLink="/Register"
+          subscribeLink="/rule_book"
         />
       </div>
       <div className="thumbnail">
