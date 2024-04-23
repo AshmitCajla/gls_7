@@ -1,7 +1,7 @@
 import React, { useState, useEffect, useRef } from "react";
 import "./0_landingpage.css";
-import Bg from "./Assets/BG_SAIC.svg";
-import Game_night from "./Assets/BG_GN.svg";
+import Bg from "./Assets/BG_GLS_F.jpg"
+import Game_night from "./Assets/BG_SAC.jpeg";
 import PanelDiscussion from "./Assets/BG_AP.jpg";
 import StarNight from "./Assets/BG_SN.png";
 import Navbar from "./Navbar";
@@ -80,8 +80,7 @@ const Carousel = () => {
               Date: 27th April <br />
               Venue: LT101 <br />
               Time: 4:30 PM <br />
-              Get ready for a night of glitz and glamour as we welcome our special guest for an unforgettable evening. Celebrate the achievements of our community and be inspired by their stories
-            </>
+              Discover the power of innovation at our global leadership summit! Join us for an engaging and insightful session to explore visionary ideas to guide and mentor you towards a brighter future.            </>
           }
           seeMoreText="Know the Star"
           seeMoreLink="/Know_the_Star"
@@ -121,12 +120,10 @@ const Carousel = () => {
               Venue: Tan Audi <br />
               Time: 5:30 PM <br />
               Number of Team members: 4 <br />
-              Taking you back to the good old days, we welcome you to another
-              exciting day in this grand event-GLS. A night filled with laughter
-              and anticipation as you play to win and create memories that will
-              be etched in your hearts forever. Join us to unleash your
-              competitive spirit and immerse yourself in a night you will never
-              forget. Let the games begin!
+              Get ready to strategise and create from
+              scratch a city of your dreams. Engage in
+              a battle of generating higher revenue and
+              dominate the economic landscape
             </>
           }
           seeMoreText="Register Now!"
