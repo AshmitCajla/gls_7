@@ -24,6 +24,10 @@ const RegistrationForm = () => {
     Member_3_Phone_number: "",
     Member_3_Email: "",
     Member_3_Roll_number: "",
+    Member_4_Name: "",
+    Member_4_Phone_number: "",
+    Member_4_Email: "",
+    Member_4_Roll_number: "",
   });
 
   const handleInputChange = (event) => {
@@ -62,6 +66,10 @@ const RegistrationForm = () => {
     Member_3_Phone_number: "",
     Member_3_Email: "",
     Member_3_Roll_number: "",
+    Member_4_Name: "",
+    Member_4_Phone_number: "",
+    Member_4_Email: "",
+    Member_4_Roll_number: "",
   });
   alert("Form Submitted Successfully. Thank you for registering");  
   setCurrentPage(1);}
@@ -99,6 +107,11 @@ const RegistrationForm = () => {
       formData={formData}
       handleInputChange={handleInputChange}
     />,
+    <PageMember5Details
+    formData={formData}
+    handleInputChange={handleInputChange}
+  />,
+
   ];
   
   return (
@@ -140,7 +153,6 @@ const PageTeamDetails = ({ formData, handleInputChange }) => (
       <input
         type="text"
         name="team_name"
-        required
         value={formData.team_name}
         onChange={handleInputChange}
         placeholder="Team Name"
@@ -157,7 +169,6 @@ const PageMember1Details = ({ formData, handleInputChange }) => (
       <input
         type="text"
         name="Leader_name"
-        required
         placeholder="Name"
         value={formData.Leader_name}
         onChange={handleInputChange}
@@ -168,7 +179,6 @@ const PageMember1Details = ({ formData, handleInputChange }) => (
       <input
         type="tel"
         name="Leader_Phone_number"
-        required
         placeholder="Phone Number"
         value={formData.Leader_Phone_number}
         onChange={handleInputChange}
@@ -179,7 +189,6 @@ const PageMember1Details = ({ formData, handleInputChange }) => (
       <input
         type="email"
         name="Leader_email"
-        required
         value={formData.Leader_email}
         onChange={handleInputChange}
         placeholder="Email"
@@ -189,7 +198,6 @@ const PageMember1Details = ({ formData, handleInputChange }) => (
     <div className="input-box">
       <input
         type="text"
-        required
         name="Leader_roll_number"
         placeholder="Roll number"
         value={formData.Leader_roll_number}
@@ -207,7 +215,6 @@ const PageMember2Details = ({ formData, handleInputChange }) => (
     <div className="input-box">
       <input
         type="text"
-        required
         name="Member_1_name"
         value={formData.Member_1_name}
         onChange={handleInputChange}
@@ -218,7 +225,6 @@ const PageMember2Details = ({ formData, handleInputChange }) => (
     <div className="input-box">
       <input
         type="tel"
-        required
         name="Member_1_Phone_number"
         placeholder="Phone Number"
         value={formData.Member_1_Phone_number}
@@ -229,7 +235,6 @@ const PageMember2Details = ({ formData, handleInputChange }) => (
     <div className="input-box">
       <input
         type="email"
-        required
         name="Member_1_Email"
         placeholder="Email"
         value={formData.Member_1_Email}
@@ -240,7 +245,6 @@ const PageMember2Details = ({ formData, handleInputChange }) => (
     <div className="input-box">
       <input
         type="text"
-        required
         name="Member_1_Roll_number"
         placeholder="Roll number"
         value={formData.Member_1_Roll_number}
@@ -260,7 +264,6 @@ const PageMember3Details = ({ formData, handleInputChange }) => (
         type="text"
         name="Member_2_Name"
         value={formData.Member_2_Name}
-        required
         onChange={handleInputChange}
         placeholder="Name"
       />
@@ -268,7 +271,6 @@ const PageMember3Details = ({ formData, handleInputChange }) => (
     </div>
     <div className="input-box">
       <input
-        required
         type="tel"
         value={formData.Member_2_Phone_number}
         onChange={handleInputChange}
@@ -281,7 +283,6 @@ const PageMember3Details = ({ formData, handleInputChange }) => (
       <input
         type="email"
         name="Member_2_Email"
-        required
         value={formData.Member_2_Email}
         onChange={handleInputChange}
         placeholder="Email"
@@ -292,7 +293,6 @@ const PageMember3Details = ({ formData, handleInputChange }) => (
       <input
         type="text"
         name="Member_2_Roll_number"
-        required
         value={formData.Member_2_Roll_number}
         onChange={handleInputChange}
         placeholder="Roll number"
@@ -307,7 +307,6 @@ const PageMember4Details = ({ formData, handleInputChange }) => (
     <h3>Member 3 Details </h3>
     <div className="input-box">
       <input
-        required
         type="text"
         name="Member_3_Name"
         placeholder="Name"
@@ -320,7 +319,6 @@ const PageMember4Details = ({ formData, handleInputChange }) => (
       <input
         type="tel"
         name="Member_3_Phone_number"
-        required
         value={formData.Member_3_Phone_number}
         onChange={handleInputChange}
         placeholder="Phone Number"
@@ -331,7 +329,6 @@ const PageMember4Details = ({ formData, handleInputChange }) => (
       <input
         type="email"
         name="Member_3_Email"
-        required
         placeholder="Email"
         value={formData.Member_3_Email}
         onChange={handleInputChange}
@@ -342,9 +339,53 @@ const PageMember4Details = ({ formData, handleInputChange }) => (
       <input
         type="text"
         value={formData.Member_3_Roll_number}
-        required
         onChange={handleInputChange}
         name="Member_3_Roll_number"
+        placeholder="Roll number"
+      />
+      <label>Roll number</label>
+    </div>
+  </>
+);
+const PageMember5Details = ({ formData, handleInputChange }) => (
+  <>
+    <h3>Member 4 Details </h3>
+    <div className="input-box">
+      <input
+        type="text"
+        name="Member_4_Name"
+        placeholder="Name"
+        value={formData.Member_4_Name}
+        onChange={handleInputChange}
+      />
+      <label>Name</label>
+    </div>
+    <div className="input-box">
+      <input
+        type="tel"
+        name="Member_4_Phone_number"
+        value={formData.Member_4_Phone_number}
+        onChange={handleInputChange}
+        placeholder="Phone Number"
+      />
+      <label>Phone Number</label>
+    </div>
+    <div className="input-box">
+      <input
+        type="email"
+        name="Member_4_Email"
+        placeholder="Email"
+        value={formData.Member_4_Email}
+        onChange={handleInputChange}
+      />
+      <label>Email</label>
+    </div>
+    <div className="input-box">
+      <input
+        type="text"
+        value={formData.Member_4_Roll_number}
+        onChange={handleInputChange}
+        name="Member_4_Roll_number"
         placeholder="Roll number"
       />
       <label>Roll number</label>

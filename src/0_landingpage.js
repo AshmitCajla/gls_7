@@ -6,6 +6,7 @@ import PanelDiscussion from "./Assets/BG_AP.jpg";
 import StarNight from "./Assets/BG_SN.png";
 import Navbar from "./Navbar";
 
+
 const Carousel = () => {
   const [currentIndex, setCurrentIndex] = useState(0);
   const carouselRef = useRef(null);
@@ -49,6 +50,7 @@ const Carousel = () => {
       carouselRef.current.classList.remove(type);
     }, timeRunning);
   };
+
 
   const handleThumbnailClick = (index) => {
     setCurrentIndex(index);
@@ -119,7 +121,7 @@ const Carousel = () => {
               Date: 28th April <br />
               Venue: Tan Audi <br />
               Time: 5:30 PM <br />
-              Number of Team members: 4 <br />
+              Number of Team members: 1 - 5 <br />
               Get ready to strategise and create from
               scratch a city of your dreams. Engage in
               a battle of generating higher revenue and
@@ -128,8 +130,8 @@ const Carousel = () => {
           }
           seeMoreText="Register Now!"
           seeMoreLink="/Register"
-          subscribeText="Rule Book"
-          subscribeLink="/rule_book"
+          subscribeText="Rulebook"
+          subscribeLink="https://drive.google.com/file/d/13WUNn-HtD9o5uZIUOEJO4IBGVTRwOIDz/view?usp=sharing"
         />
       </div>
       <div className="thumbnail">
