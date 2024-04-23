@@ -94,7 +94,7 @@ header a {
 .thumbnail {
   position: absolute;
   bottom: 50px;
-  left: 50%;
+  left: 75%;
   width: max-content;
   z-index: 100;
   display: flex;
@@ -132,6 +132,7 @@ header a {
   font-size: 0.8em;
   font-weight: bolder;
 }
+
 
 /* arrows */
 .arrows {
@@ -282,7 +283,6 @@ header a {
     width: 0;
   }
 }
-
 /* prev click */
 .carousel.prev .list .item:nth-child(2) {
   z-index: 2;
@@ -346,6 +346,6 @@ header a {
     display: grid;
     grid-template-rows: repeat(2, 1fr);
     gap: 5px;
-    margin-top: 20px;
+    margin-top: 10px;
   }
 }
