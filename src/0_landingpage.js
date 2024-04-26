@@ -87,7 +87,7 @@ const Carousel = () => {
           seeMoreText="Know the Guest"
           seeMoreLink="/Know_the_Star"
           subscribeText="Register Now!"
-          subscribeLink="/Register4speakersession"
+          subscribeLink="https://forms.gle/ePFKVfUVF2vDhPfPA"
         />
           <CarouselItem
             src={PanelDiscussion}
